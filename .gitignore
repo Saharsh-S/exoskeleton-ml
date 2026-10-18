@@ -1,0 +1,163 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments (uv creates .venv/ automatically)
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables (never commit tokens or secrets)
+.env
+.env.*
+!.env.example
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.pytest_cache/
+.hypothesis/
+
+# Linters and type checkers
+.ruff_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints/
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Data files (don't commit large datasets; they live on Hugging Face)
+/data/
+/archive/*/data/
+/sandbox/**/data/
+*.csv
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.parquet
+*.feather
+*.arrow
+*.mcap
+*.npy
+*.npz
+
+# Small CSVs used as test fixtures are allowed
+!tests/**/*.csv
+
+# Model files (don't commit trained models to git)
+/models/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.pb
+*.tflite
+*.keras
+saved_models/
+checkpoints/
+
+# Experiment tracking
+wandb/
+.wandb/
+mlruns/
+runs/
+lightning_logs/
+tensorboard_logs/
+logs/
+*.log
+
+# DVC (Data Version Control)
+.dvc/cache
+.dvc/tmp
+
+# Hydra
+outputs/
+multirun/
+.hydra/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Cython debug symbols
+cython_debug/
+
+# Profiling
+*.prof
+*.lprof
+
+# Documentation builds
+docs/_build/
+
+# Backup and temporary files
+*.bak
+*.tmp
+temp/*
+
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
