@@ -1,0 +1,28 @@
+[project]
+name = "exo-ml"
+version = "0.1.0"
+description = "Machine learning for real-time joint torque prediction on the McMaster Exoskeleton."
+readme = "README.md"
+authors = [
+    { name = "McMaster Exoskeleton" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.17.1",
+]
+
+[tool.ruff]
+line-length = 100
+# Last year's code is its own uv project with its own dependencies.
+extend-exclude = ["archive"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
